@@ -1,0 +1,27 @@
+fun main() {
+    val devi = Boy()
+    devi.actualAge = 17
+    devi.age = 17
+    println("devi: actual age = ${devi.actualAge}")
+    println("devi: pretended age = ${devi.age}")
+
+    val hari = Boy()
+    hari.actualAge = 15
+    hari.age = 15
+    println("hari: actual age = ${hari.actualAge}")
+    println("hari: pretended age = ${hari.age}")
+}
+
+class Boy {
+    var age: Int = 0
+        get() = field
+        set(value) {
+            field = if (value < 18) {
+                18
+            } else {
+                value
+            }
+        }
+
+    var actualAge: Int = 0
+}
