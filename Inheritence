@@ -1,0 +1,25 @@
+open class Person(var name:String,var age:Int){
+init{
+    println("my name is $name")
+    println("my age is $age")
+}
+}
+class Math(name:String, age:Int): Person(name,age){
+    fun teachmath(){
+        println("i will teach maths")
+    }
+}
+class Football( name:String, age:Int):Person(name,age){
+    fun playfootball(){
+        println("i will play football")
+    }
+}
+fun main(){
+    val p1=Math("kavita",30)
+    p1.teachmath()
+    
+    println()
+    
+    val p2=Football("devi",18)
+    p2.playfootball()
+}
