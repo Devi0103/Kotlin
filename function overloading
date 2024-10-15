@@ -1,0 +1,12 @@
+fun main(){
+    //fun overloading 
+    //same fun name but diff parameters(int and Double)
+    println(sum(a=4,b=6))
+    println(sum(a=5.3,b=8.9))
+}
+fun sum(a:Int,b:Int):Int{
+return a+b
+}
+fun sum(a:Double,b:Double):Double{
+return a+b
+}
